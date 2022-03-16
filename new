@@ -1,0 +1,498 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local SignedIn = Instance.new("Frame")
+local OnOff = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local Text1 = Instance.new("TextLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local SignIn = Instance.new("Frame")
+local Pleasewait = Instance.new("ImageLabel")
+local Text1_2 = Instance.new("TextLabel")
+local OnOff_2 = Instance.new("TextLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local Loader = Instance.new("Frame")
+local Icon = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local Notification = Instance.new("Frame")
+local Icon_2 = Instance.new("ImageLabel")
+local TITLE_TEXT = Instance.new("TextLabel")
+local MAIN_TEXT = Instance.new("TextLabel")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local Mini = Instance.new("Frame")
+local OnOff_3 = Instance.new("TextLabel")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local Text1_3 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+SignedIn.Name = "SignedIn"
+SignedIn.Parent = ScreenGui
+SignedIn.AnchorPoint = Vector2.new(0.5, 0.5)
+SignedIn.BackgroundColor3 = Color3.fromRGB(25, 27, 31)
+SignedIn.BorderSizePixel = 0
+SignedIn.Position = UDim2.new(0.499449134, 0, 0.499348789, 0)
+SignedIn.Size = UDim2.new(0.187146872, 0, 0.173982337, 0)
+SignedIn.Visible = false
+
+OnOff.Name = "OnOff"
+OnOff.Parent = SignedIn
+OnOff.AnchorPoint = Vector2.new(0.5, 0.5)
+OnOff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OnOff.BackgroundTransparency = 1.000
+OnOff.BorderSizePixel = 0
+OnOff.Position = UDim2.new(0.530188739, 0, 0.642111719, 0)
+OnOff.Size = UDim2.new(0.93962276, 0, 0.168679714, 0)
+OnOff.Font = Enum.Font.GothamSemibold
+OnOff.Text = "Autofarm online."
+OnOff.TextColor3 = Color3.fromRGB(255, 255, 255)
+OnOff.TextScaled = true
+OnOff.TextSize = 14.000
+OnOff.TextWrapped = true
+OnOff.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel.Parent = SignedIn
+ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.164374143, 0, 0.325222313, 0)
+ImageLabel.Size = UDim2.new(0.208560154, 0, 0.350625485, 0)
+ImageLabel.Image = "rbxassetid://9111760269"
+ImageLabel.ScaleType = Enum.ScaleType.Fit
+
+Text1.Name = "Text1"
+Text1.Parent = SignedIn
+Text1.AnchorPoint = Vector2.new(0.5, 0.5)
+Text1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text1.BackgroundTransparency = 1.000
+Text1.BorderSizePixel = 0
+Text1.Position = UDim2.new(0.498113245, 0, 0.789401114, 0)
+Text1.Size = UDim2.new(0.875471771, 0, 0.13442637, 0)
+Text1.Font = Enum.Font.Gotham
+Text1.Text = "Signed in as DEN"
+Text1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text1.TextScaled = true
+Text1.TextSize = 14.000
+Text1.TextWrapped = true
+Text1.TextXAlignment = Enum.TextXAlignment.Left
+
+UIAspectRatioConstraint.Parent = SignedIn
+UIAspectRatioConstraint.AspectRatio = 1.689
+
+SignIn.Name = "SignIn"
+SignIn.Parent = ScreenGui
+SignIn.AnchorPoint = Vector2.new(0.5, 0.5)
+SignIn.BackgroundColor3 = Color3.fromRGB(25, 27, 31)
+SignIn.BorderSizePixel = 0
+SignIn.Position = UDim2.new(0.499449134, 0, 0.499348789, 0)
+SignIn.Size = UDim2.new(0.187146872, 0, 0.173982337, 0)
+SignIn.Visible = false
+
+Pleasewait.Name = "Pleasewait"
+Pleasewait.Parent = SignIn
+Pleasewait.AnchorPoint = Vector2.new(0.5, 0.5)
+Pleasewait.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pleasewait.BackgroundTransparency = 1.000
+Pleasewait.BorderSizePixel = 0
+Pleasewait.Position = UDim2.new(0.5, 0, 0.5, 0)
+Pleasewait.Size = UDim2.new(0.208560154, 0, 0.350625485, 0)
+Pleasewait.Visible = false
+Pleasewait.Image = "http://www.roblox.com/asset/?id=8226141461"
+Pleasewait.ScaleType = Enum.ScaleType.Fit
+
+Text1_2.Name = "Text1"
+Text1_2.Parent = SignIn
+Text1_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Text1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text1_2.BackgroundTransparency = 1.000
+Text1_2.BorderSizePixel = 0
+Text1_2.Position = UDim2.new(0.498113245, 0, 0.789401114, 0)
+Text1_2.Size = UDim2.new(0.875471771, 0, 0.13442637, 0)
+Text1_2.Font = Enum.Font.Gotham
+Text1_2.Text = "Please wait"
+Text1_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text1_2.TextScaled = true
+Text1_2.TextSize = 14.000
+Text1_2.TextWrapped = true
+Text1_2.TextXAlignment = Enum.TextXAlignment.Left
+
+OnOff_2.Name = "OnOff"
+OnOff_2.Parent = SignIn
+OnOff_2.AnchorPoint = Vector2.new(0.5, 0.5)
+OnOff_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OnOff_2.BackgroundTransparency = 1.000
+OnOff_2.BorderSizePixel = 0
+OnOff_2.Position = UDim2.new(0.530188739, 0, 0.642111719, 0)
+OnOff_2.Size = UDim2.new(0.93962276, 0, 0.168679714, 0)
+OnOff_2.Font = Enum.Font.GothamSemibold
+OnOff_2.Text = "Signing in..."
+OnOff_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+OnOff_2.TextScaled = true
+OnOff_2.TextSize = 14.000
+OnOff_2.TextWrapped = true
+OnOff_2.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel_2.Parent = SignIn
+ImageLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0.164374143, 0, 0.325222313, 0)
+ImageLabel_2.Size = UDim2.new(0.208560154, 0, 0.350625485, 0)
+ImageLabel_2.Image = "rbxassetid://9111760269"
+ImageLabel_2.ScaleType = Enum.ScaleType.Fit
+
+UIAspectRatioConstraint_2.Parent = SignIn
+UIAspectRatioConstraint_2.AspectRatio = 1.689
+
+Loader.Name = "Loader"
+Loader.Parent = ScreenGui
+Loader.AnchorPoint = Vector2.new(0.5, 0.5)
+Loader.BackgroundColor3 = Color3.fromRGB(25, 27, 31)
+Loader.BorderSizePixel = 0
+Loader.Position = UDim2.new(0.5, 0, 0.5, 0)
+Loader.Size = UDim2.new(0.0706214681, 0, 0.119189508, 0)
+Loader.Visible = false
+
+Icon.Name = "Icon"
+Icon.Parent = Loader
+Icon.AnchorPoint = Vector2.new(0.5, 0.5)
+Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon.BackgroundTransparency = 1.000
+Icon.BorderSizePixel = 0
+Icon.Position = UDim2.new(0.5, 0, 0.5, 0)
+Icon.Size = UDim2.new(0.610000014, 0, 0.610000014, 0)
+Icon.Image = "rbxassetid://9111760269"
+Icon.ScaleType = Enum.ScaleType.Fit
+
+UIAspectRatioConstraint_3.Parent = Loader
+UIAspectRatioConstraint_3.AspectRatio = 0.930
+
+Notification.Name = "Notification"
+Notification.Parent = ScreenGui
+Notification.AnchorPoint = Vector2.new(0.5, 0.5)
+Notification.BackgroundColor3 = Color3.fromRGB(25, 27, 31)
+Notification.BorderSizePixel = 0
+Notification.Position = UDim2.new(0.89316386, 0, 0.945596576, 0)
+Notification.Size = UDim2.new(0.200564966, 0, 0.0848214254, 0)
+Notification.Visible = false
+
+Icon_2.Name = "Icon"
+Icon_2.Parent = Notification
+Icon_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Icon_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon_2.BackgroundTransparency = 1.000
+Icon_2.BorderSizePixel = 0
+Icon_2.Position = UDim2.new(0.14089407, 0, 0.490465164, 0)
+Icon_2.Size = UDim2.new(0.173282698, 0, 0.649211049, 0)
+Icon_2.Image = "rbxassetid://9111760269"
+Icon_2.ScaleType = Enum.ScaleType.Fit
+
+TITLE_TEXT.Name = "TITLE_TEXT"
+TITLE_TEXT.Parent = Notification
+TITLE_TEXT.AnchorPoint = Vector2.new(0.5, 0.5)
+TITLE_TEXT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TITLE_TEXT.BackgroundTransparency = 1.000
+TITLE_TEXT.BorderSizePixel = 0
+TITLE_TEXT.Position = UDim2.new(0.597816944, 0, 0.308101416, 0)
+TITLE_TEXT.Size = UDim2.new(0.647887349, 0, 0.284483135, 0)
+TITLE_TEXT.Font = Enum.Font.GothamBold
+TITLE_TEXT.Text = "SUCCESS"
+TITLE_TEXT.TextColor3 = Color3.fromRGB(255, 255, 255)
+TITLE_TEXT.TextScaled = true
+TITLE_TEXT.TextSize = 14.000
+TITLE_TEXT.TextWrapped = true
+TITLE_TEXT.TextXAlignment = Enum.TextXAlignment.Left
+
+MAIN_TEXT.Name = "MAIN_TEXT"
+MAIN_TEXT.Parent = Notification
+MAIN_TEXT.AnchorPoint = Vector2.new(0.5, 0.5)
+MAIN_TEXT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MAIN_TEXT.BackgroundTransparency = 1.000
+MAIN_TEXT.BorderSizePixel = 0
+MAIN_TEXT.Position = UDim2.new(0.597816944, 0, 0.634071708, 0)
+MAIN_TEXT.Size = UDim2.new(0.647887349, 0, 0.36745739, 0)
+MAIN_TEXT.Font = Enum.Font.Gotham
+MAIN_TEXT.Text = "Hazel Industries loaded. Welcome!"
+MAIN_TEXT.TextColor3 = Color3.fromRGB(255, 255, 255)
+MAIN_TEXT.TextScaled = true
+MAIN_TEXT.TextSize = 14.000
+MAIN_TEXT.TextWrapped = true
+MAIN_TEXT.TextXAlignment = Enum.TextXAlignment.Left
+
+UIAspectRatioConstraint_4.Parent = Notification
+UIAspectRatioConstraint_4.AspectRatio = 3.712
+
+Mini.Name = "Mini"
+Mini.Parent = ScreenGui
+Mini.AnchorPoint = Vector2.new(0.5, 0.5)
+Mini.BackgroundColor3 = Color3.fromRGB(25, 27, 31)
+Mini.BorderSizePixel = 0
+Mini.Position = UDim2.new(0.101144046, 0, 0.944470704, 0)
+Mini.Size = UDim2.new(0.202683598, 0, 0.110789433, 0)
+Mini.Visible = false
+
+OnOff_3.Name = "OnOff"
+OnOff_3.Parent = Mini
+OnOff_3.AnchorPoint = Vector2.new(0.5, 0.5)
+OnOff_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OnOff_3.BackgroundTransparency = 1.000
+OnOff_3.BorderSizePixel = 0
+OnOff_3.Position = UDim2.new(0.523220122, 0, 0.590578198, 0)
+OnOff_3.Size = UDim2.new(0.9396227, 0, 0.245735884, 0)
+OnOff_3.Font = Enum.Font.GothamSemibold
+OnOff_3.Text = "Autofarm online."
+OnOff_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+OnOff_3.TextScaled = true
+OnOff_3.TextSize = 14.000
+OnOff_3.TextWrapped = true
+OnOff_3.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageLabel_3.Parent = Mini
+ImageLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Position = UDim2.new(0.123015374, 0, 0.265996754, 0)
+ImageLabel_3.Size = UDim2.new(0.13977991, 0, 0.392282665, 0)
+ImageLabel_3.Image = "rbxassetid://9111760269"
+ImageLabel_3.ScaleType = Enum.ScaleType.Fit
+
+UICorner.CornerRadius = UDim.new(0, 16)
+UICorner.Parent = ImageLabel_3
+
+Text1_3.Name = "Text1"
+Text1_3.Parent = Mini
+Text1_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Text1_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text1_3.BackgroundTransparency = 1.000
+Text1_3.BorderSizePixel = 0
+Text1_3.Position = UDim2.new(0.491144568, 0, 0.81821692, 0)
+Text1_3.Size = UDim2.new(0.875471771, 0, 0.209541172, 0)
+Text1_3.Font = Enum.Font.Gotham
+Text1_3.Text = "Signed in as DEN"
+Text1_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text1_3.TextScaled = true
+Text1_3.TextSize = 14.000
+Text1_3.TextWrapped = true
+Text1_3.TextXAlignment = Enum.TextXAlignment.Left
+
+UIAspectRatioConstraint_5.Parent = Mini
+UIAspectRatioConstraint_5.AspectRatio = 2.872
+
+-- Scripts:
+
+local function OGGQYW_fake_script() -- Pleasewait.LocalScript 
+	local script = Instance.new('LocalScript', Pleasewait)
+
+	local tweenService = game:GetService("TweenService")
+	local fra = script.Parent
+	
+	while true do
+	wait(1.25)
+	tweenService:Create(fra, TweenInfo.new(1), {ImageTransparency = 1}):Play()
+	wait(1.25)
+	tweenService:Create(fra, TweenInfo.new(1), {ImageTransparency = 0}):Play()
+	end
+end
+coroutine.wrap(OGGQYW_fake_script)()
+local function VXBYF_fake_script() -- ScreenGui.Main 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local main = script.Parent
+	local tweenService = game:GetService("TweenService")
+	local loader = main.Loader
+	local signedin = main.SignedIn
+	local signinplease = main.SignIn
+	local loadericon = loader.Icon
+	local mini = main.Mini
+	
+	local notification = main.Notification
+	local notif_icon = notification.Icon
+	local notif_text = notification.MAIN_TEXT
+	local notif_title = notification.TITLE_TEXT
+	notif_icon.Position = UDim2.new(0.498, 0, 0.61, 0)
+	notification.Position = UDim2.new(1.1, 0, 0.946, 0)
+	
+	--loader.Visible=false
+	signedin.Visible=false
+	signinplease.Visible=false
+	
+	
+	
+	
+	function notify(title,text)
+	notification.Position = UDim2.new(1.1, 0, 0.946, 0)
+	notif_icon.Position = UDim2.new(0.497, 0, 0.49, 0)
+	
+	
+	notif_icon.Visible=false
+	notif_text.Visible=false
+	notif_title.Visible=false
+	
+	--notif animation
+	notification:TweenPosition(UDim2.new(0.893, 0, 0.946, 0))
+	wait(1)
+	
+	notif_icon.Visible=true
+	notif_text.Visible=true
+	notif_title.Visible=true
+	
+	notif_text.Text = text
+	notif_title.Text = title
+	
+	notif_icon.ImageTransparency = 1
+	notif_text.TextTransparency = 1
+	notif_title.TextTransparency = 1
+	
+	tweenService:Create(notif_icon, TweenInfo.new(0.5), {ImageTransparency = 0}):Play()
+	wait(1.5)
+	notif_icon:TweenPosition(UDim2.new(0.141, 0, 0.49, 0))
+	wait(1.5)
+	tweenService:Create(notif_title, TweenInfo.new(0.5), {TextTransparency = 0}):Play()
+	tweenService:Create(notif_text, TweenInfo.new(0.5), {TextTransparency = 0}):Play()
+	
+	
+	wait(3)
+	
+	tweenService:Create(notif_title, TweenInfo.new(1), {TextTransparency = 1}):Play()
+	tweenService:Create(notif_text, TweenInfo.new(1), {TextTransparency = 1}):Play()
+	tweenService:Create(notif_icon, TweenInfo.new(1), {ImageTransparency = 1}):Play()
+	wait(1)
+	notification:TweenPosition(UDim2.new(1.1, 0, 0.946, 0))
+	end
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	--/ Loader Animation
+	wait(5)
+	loader.Visible=true
+	loader.AnchorPoint = Vector2.new(0.5, 0.5)
+	loader.Position = UDim2.new(0.5, 0, 0.5, 0)
+	loader.Size = UDim2.new(0, 0, 0, 0)
+	
+	
+	loadericon.AnchorPoint = Vector2.new(0.5, 0.5)
+	loadericon.Position = UDim2.new(0.5, 0, 0.5, 0)
+	loadericon.Size = UDim2.new(0, 0, 0, 0)
+	
+	signinplease.Text1.TextTransparency = 1
+	signinplease.OnOff.TextTransparency = 1
+	signinplease.ImageLabel.ImageTransparency = 1
+	
+	
+	
+	loader:TweenSize(UDim2.new(0.071, 0, 0.119, 0))
+	loadericon:TweenSize(UDim2.new(0.61, 0, 0.61, 0))
+	wait(1.25)
+	tweenService:Create(loadericon, TweenInfo.new(.25), {ImageTransparency = 1}):Play()
+	loader:TweenSize(UDim2.new(0.187, 0, 0.174, 0))
+	wait(1)
+	signinplease.Visible=true
+	tweenService:Create(signinplease.OnOff, TweenInfo.new(0.5), {TextTransparency = 0}):Play()
+	tweenService:Create(signinplease.Text1, TweenInfo.new(0.5), {TextTransparency = 0}):Play()
+	tweenService:Create(signinplease.ImageLabel, TweenInfo.new(0.5), {ImageTransparency = 0}):Play()
+	loader.Visible=false
+	
+	wait(3)
+	
+	tweenService:Create(signinplease.OnOff, TweenInfo.new(0.5), {TextTransparency = 1}):Play()
+	tweenService:Create(signinplease.Text1, TweenInfo.new(0.5), {TextTransparency = 1}):Play()
+	tweenService:Create(signinplease.ImageLabel, TweenInfo.new(0.5), {ImageTransparency = 1}):Play()
+	wait(0.75)
+	signinplease.Pleasewait.Visible=true
+	
+	
+	
+	wait(2)
+	tweenService:Create(signinplease.Pleasewait, TweenInfo.new(1), {ImageTransparency = 1}):Play()
+	signinplease.Pleasewait.LocalScript.Disabled=true
+	wait(1)
+	signinplease.Visible=false
+	signedin.Visible=true
+	
+	signedin.Text1.TextTransparency = 1
+	signedin.OnOff.TextTransparency = 1
+	signedin.ImageLabel.ImageTransparency = 1
+	
+	tweenService:Create(signedin.OnOff, TweenInfo.new(0.5), {TextTransparency = 0}):Play()
+	tweenService:Create(signedin.Text1, TweenInfo.new(0.5), {TextTransparency = 0}):Play()
+	tweenService:Create(signedin.ImageLabel, TweenInfo.new(0.5), {ImageTransparency = 0}):Play()
+	
+	
+	wait(3)
+	
+	tweenService:Create(signedin.OnOff, TweenInfo.new(0.5), {TextTransparency = 1}):Play()
+	tweenService:Create(signedin.Text1, TweenInfo.new(0.5), {TextTransparency = 1}):Play()
+	tweenService:Create(signedin.ImageLabel, TweenInfo.new(0.5), {ImageTransparency = 1}):Play()
+	tweenService:Create(signedin, TweenInfo.new(0.5), {BackgroundTransparency = 1}):Play()
+	wait(0.5)
+	signedin.Visible=false
+	wait(.75)
+	notify("Hold up!","We are moving the gui to the bottom left corner for your convenience.")
+	wait(1)
+	mini.Visible=true
+	mini.Position = UDim2.new(-0.102, 0, 0.946, 0)
+	mini:TweenPosition(UDim2.new(0.101, 0, 0.944, 0))
+	wait(5)
+	mini.Text1.Text = "TURNING WEBHOOK LOGS ON IN 5 SECONDS"
+	wait(1)
+	mini.Text1.Text = "TURNING WEBHOOK LOGS ON IN 4 SECONDS"
+	wait(1)
+	mini.Text1.Text = "TURNING WEBHOOK LOGS ON IN 3 SECONDS"
+	wait(1)
+	mini.Text1.Text = "TURNING WEBHOOK LOGS ON IN 2 SECONDS"
+	wait(1)
+	mini.Text1.Text = "TURNING WEBHOOK LOGS ON IN 1 SECONDS"
+	wait(1)
+	mini.Text1.Text = "WEBHOOKS ONLINE"
+	wait(1)
+	mini.Webhook.Disabled=false
+	mini.OnOff.Text = "It is currently"
+	
+	
+	
+	
+	local timeLabel = mini.Text1
+	
+	while wait() do
+		local minutes = os.date("*t")["min"]
+		local hours = os.date("*t")["hour"]
+	
+		if tonumber(minutes) <= 9 then
+			minutes = "0"..minutes
+	
+		end
+		if tonumber(hours)<= 9 then
+			hours = "0"..hours
+	
+		end
+		timeLabel.Text = hours..":"..minutes
+	end
+	notify("Welcome","Welcome to Hazel's Remote Server.")
+	
+	
+	
+	
+	--
+	
+	
+end
+coroutine.wrap(VXBYF_fake_script)()
+-- Mini.Webhook is disabled.
