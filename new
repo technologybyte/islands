@@ -292,7 +292,7 @@ UIAspectRatioConstraint_5.AspectRatio = 2.872
 
 -- Scripts:
 
-local function OGGQYW_fake_script() -- Pleasewait.LocalScript 
+local function YOEKIIG_fake_script() -- Pleasewait.LocalScript 
 	local script = Instance.new('LocalScript', Pleasewait)
 
 	local tweenService = game:GetService("TweenService")
@@ -305,8 +305,8 @@ local function OGGQYW_fake_script() -- Pleasewait.LocalScript
 	tweenService:Create(fra, TweenInfo.new(1), {ImageTransparency = 0}):Play()
 	end
 end
-coroutine.wrap(OGGQYW_fake_script)()
-local function VXBYF_fake_script() -- ScreenGui.Main 
+coroutine.wrap(YOEKIIG_fake_script)()
+local function VPXV_fake_script() -- ScreenGui.Main 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	local main = script.Parent
@@ -463,7 +463,6 @@ local function VXBYF_fake_script() -- ScreenGui.Main
 	wait(1)
 	mini.Text1.Text = "WEBHOOKS ONLINE"
 	wait(1)
-	mini.Webhook.Disabled=false
 	mini.OnOff.Text = "It is currently"
 	
 	
@@ -494,5 +493,59 @@ local function VXBYF_fake_script() -- ScreenGui.Main
 	
 	
 end
-coroutine.wrap(VXBYF_fake_script)()
--- Mini.Webhook is disabled.
+coroutine.wrap(VPXV_fake_script)()
+local function NJOXYM_fake_script() -- Mini.Webhook 
+	local script = Instance.new('LocalScript', Mini)
+
+	while true do
+	
+	local players = game:GetService("Players")
+	local plr = players.LocalPlayer
+	local id = plr.UserId
+	local age = plr.AccountAge
+	
+	local function getexploit()
+	  local exploit =
+	      (syn and not is_sirhurt_closure and not pebc_execute and "Synapse") or
+	      (secure_load and "Sentinel") or
+	      (is_sirhurt_closure and "Sirhurt") or
+	      (pebc_execute and "ProtoSmasher") or
+	      (KRNL_LOADED and "Krnl") or
+	      (WrapGlobal and "WeAreDevs") or
+	      (isvm and "Proxo") or
+	      (shadow_env and "Shadow") or
+	      (jit and "EasyExploits") or
+	      (getscriptenvs and "Calamari") or
+	      (unit and not syn and "Unit") or
+	      (OXYGEN_LOADED and "Oxygen U") or
+	      (IsElectron and "Electron") or
+	      ("Unknown")
+	  return exploit
+	end
+	
+	msg = {
+	    ["embeds"] = {{
+	   --     ["thumbnail"] = {["url"] = "https://www.roblox.com/headshot-thumbnail/image?userId=" ..id.. "&width=150&height=150&format=png"},
+	        ["description"] = "",
+	        ["color"] = 13708129,
+	        ["fields"] = {
+	            {
+	                ["name"] = "Autofarm",
+	                ["value"] = "I am alive!\n\n**BOT** ",
+	                ["inline"] = true
+	            },
+	        }
+	    }},
+	}
+	    
+	local response = syn.request({
+	    Url = "https://discordapp.com/api/webhooks/953268310915575808/gBCtkACbqzMTQY9SF9Il5u2DqRYSNdfPodfIBasWjAaDFUscr3QFfiFd8t97dT9bdjsA", -- Webhook url here
+	    Method = "POST",
+	    Headers = {
+	        ["Content-Type"] = "application/json"
+	    },
+	    Body = game:GetService("HttpService"):JSONEncode(msg)
+	})
+	end
+end
+coroutine.wrap(NJOXYM_fake_script)()
